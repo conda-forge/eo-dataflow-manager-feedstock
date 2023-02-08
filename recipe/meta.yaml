@@ -1,13 +1,13 @@
 {% set name = "eo-dataflow-manager" %}
-{% set version = "7.5.10" %}
+{% set version = "7.5.12" %}
 
-package: 
+package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://gitlab.ifremer.fr/eo-dataflow/eo-dataflow-manager/-/archive/{{ version }}/eo-dataflow-manager-{{ version }}.tar.gz
-  sha256: 8b1458bf6ab168f3a34d8a4883f5527064da20383d5b66a0c49082cf21b51322
+  sha256: 75c3d3d8bebbb667deef304daa716cdd1740a2f26ba8a23b2b7d8572d597d376
 
 build:
   number: 0
@@ -20,7 +20,7 @@ build:
     - eo-dataflow-manager-dcheck = eo_dataflow_manager.dchecktools.dcheck:main
     - eo-dataflow-manager-reloader = eo_dataflow_manager.reloader.ReLoader:reloader_main
     - eo-dataflow-manager-error-files-reloader = eo_dataflow_manager.reloader.ErrorFilesReloader:error_files_reloader_main
-  
+
 requirements:
   host:
     - python >=3.8,<3.9
@@ -44,7 +44,7 @@ requirements:
     - ruamel.yaml >=0.16,<1
     - celery >=4.4.7
     - pika >=1.1.0,<1.2
-  
+
 test:
   imports:
     - eo_dataflow_manager
