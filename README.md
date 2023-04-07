@@ -1,11 +1,11 @@
-About eo-dataflow-manager
-=========================
+About eo-dataflow-manager-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eo-dataflow-manager-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.ifremer.fr/eo-dataflow/eo-dataflow-manager
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eo-dataflow-manager-feedstock/blob/main/LICENSE.txt)
 
 Summary: Checks online services for changed in data files, and downloads them when needed.
 
