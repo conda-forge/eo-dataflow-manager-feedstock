@@ -1,5 +1,5 @@
 {% set name = "eo-dataflow-manager" %}
-{% set version = "7.8.2" %}
+{% set version = "7.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/eo-dataflow/eo-dataflow-manager/-/archive/{{ version }}/eo-dataflow-manager-{{ version }}.tar.gz
-  sha256: 0dd78622808ffeb4867fef1d85dc9c09345487abe71459c4a5251b6b239f5b79
+  sha256: f49e5599bcf91799e1dc4984590554985b942d88ad92016e74540cef73c7e7cf
 
 build:
   number: 0
